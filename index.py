@@ -37,7 +37,7 @@ youtube = get_authenticated_service()
 
 
 
-playlist_uri = 'https://open.spotify.com/playlist/1gXK3DIaiB0IlQpvC4PNHT?si=11005eb526614a86'
+playlist_uri = input("Enter Spotify Playlist URL: ")
 results = sp.playlist_tracks(playlist_uri)
 tracks = results['items']
 while results['next']:
